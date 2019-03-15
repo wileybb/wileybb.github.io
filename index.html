@@ -2,37 +2,45 @@
 <html>
     <head>
         <title>About Me</title>
-        
-        <link rel = "stylesheet" type = "text/css"href = "assets/css/style.css" />
+        <link rel="stylesheet" type ="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
     </head>
+
     <body>
-        <div id="header">
-            <h1 id="name">Wiley Buchanan</h1>
-            <p id="portfolio"><a href="portfolio.html">Portfolio <a></p>
-            <p id="contact"><a href="contact.html">Contact  |</a></p>
-            <p id="about me"><a href="index.html">About Me  |</a></p>
+        <div class="container-fluid ">    
+            <div class="row">
+                <div class="col-md-4 name" ><h2>Wiley Buchanan</h2></div>
+                <div class="col-md-8" id="navbar"><br><p><a href="#">About</a> | <a href="portfolio.html">Portfolio</a>  | <a href="contact.html">Contact</a> </p></div>
+            </div>
+        </div>    
+
+        <div class="container" style="margin-bottom:100px">
+            <div class="row title">
+                <h2> About Me</h2>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 "><img src="assets/images/200.png" style="margin-bottom:15px;"></div>
+                <div class="col-lg-4 "><p id="bio"> Hey! My name is Wiley Buchanan, I am 26 years old. I am from Berkeley, CA and still currently live there. I hope to soon get a job coding after I complete this full-stack development course. I am interested in block chain and all the different applications it could have including currency and trade. I am alos interested in urban farming and raising food in cities as a way to limit waste and create a more environmental and fair food system. In my free time I like to play piano and garden.</p></div>
+            </div>
         </div>
-        <div id="container">
+
         
-          <p id="title">About me</p>
-          <br>
-          <hr>
-            <img src="assets/images/200.png" id="picture">
-          
-         
-            <p id="paragraph">Hey! My name's Wiley. I am just starting out coding. Soon I will have a certificate from a full-stack development course! That will be sweet! I love to play piano, listen to music, garden and play video games in my free time. I went to colege at UC Berkeley and received a bachelors degree in philosophy. I am interested in urban-farming and growing food in cities as a way to restructure the food system. I think this would be a great solution for climate change and other ills affecting our society today. I hope to embark on projects related to this in the future. Currently I have some fruit, vegetables and herbs growing at home, but I really need some fruit trees. labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          
+   <div class="container-fluid" id="footer">
+        <div class="row">
+           <br><p id="copyright">Copyright</p><br>
         </div>
-         
-        
-          
-        
+    </div>
+
+
+
+            <!-- Link to bootstrap javascript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
-    <footer>
-     <div id="footer">
-         
-    </div>  
-       
-    </footer>
+  
 
 </html>
