@@ -1,46 +1,165 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" type ="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
-    </head>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Wiley Burke Buchanan</title>
+		<meta name="description" content="Infinite WebGL tubes as seen on Fornasetti.com made with Three.js" />
+		<meta name="keywords" content="webgl, effect, tube, infinite, interactive, threejs, background, canvas" />
+		<meta name="author" content="Louis Hoebregts for Codrops" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<script>document.documentElement.className = 'js';</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+	<body class="demo-5">
+		<main>
+			<div id="navigation-wrapper">
+				<div id="navigation-bar-background">
+				</div>
+				<div id="nav-contents">
+					<a class="navigation-link" href="#bio">About Me</a>
+					<a class="navigation-link" href="#projects">Projects</a>
+					<a class="navigation-link" href="#contact">Contact</a>
+				</div>
+			</div>
+			<div class="content">
+                <!-- The canvas where ThreeJs renders the WebGL -->        
+        	<canvas id="scene"></canvas>
+			<div id="title">
+				<h1 class="codrops-header__title name-heading">Wiley Burke Buchanan</h1>
+				<h1 id="profession">Full Stack Developer</h1>
+				<h1 class="codrops-header__title" id="location">Berkeley, CA</h1>
+			</div>
 
-    <body>
-        <div class="container-fluid ">    
-            <div class="row">
-                <div class="col-md-4 name" ><h2>Wiley Buchanan</h2></div>
-                <div class="col-md-8" id="navbar"><br><p><a href="#">About</a> | <a href="portfolio.html">Portfolio</a>  | <a href="contact.html">Contact</a> </p></div>
-            </div>
-        </div>    
+			<div id="bio">
+				<p id="bio-paragraph">Hi, welcome to my website! I am a software developer/frontend developer. I have experience building and hosting full stack web applications and dynamic, mobile responsive UIs. I take freelance clients and I am currently looking for a full-time developer role. I love to create software that is powerful, fun to use and beatiful. I am constantly learning new technologies and that is one thing I love about the software industry. I am interested in blockchain technlogoy and specifically how it can be applied in content distribution and monetization. I am also interested in urban agriculture and alternatives to industrial agriculture.</p>
+			</div>
 
-        <div class="container" style="margin-bottom:100px">
-            <div class="row title">
-                <h2> About Me</h2>
-                
-            </div>
-            <hr>
-            <div class="row">
-                <!-- <div class="col-md-3 "><img src="assets/images/200.png" style="margin-bottom:15px;"></div> -->
-                <div class="col-lg-4 "><p id="bio"> Hi, welcome to my website! My name is Wiley Buchanan, I am a full stack software developer with a background in logic and philosophy. I am also interested in block chain technology and all the different applications it could have. I am passionate about implimenting urban farming and raising food in cities as a way to limit waste and create a more environmental and fair food system. In my free time I like to play piano and garden. Thanks for visiting!</p></div>
-            </div>
-        </div>
+			</div>
+			<div id="projects">
+				<h1 class="section-heading">Projects</h1>
+				<div class="container">
+					<div class="row">
+						<!-- Crest card  -->
+						<div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./projectScreenShots/crest.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Crest</h5>
+									<p class="project-tech-list">Node.js, React.js, Express.js, Sequelize</p>
+									<p class="project-summary">Stock trading simulation app that uses real-world data. Users can monitor portfolio perfomance over time. Created with node, express, sequelize and react.</p>
+									<div id="button-wrapper">
+										<a href="https://github.com/wileybb/Crest" target="_blank" class="btn btn-primary">GitHub Repo</a>
+										<a href="https://obscure-basin-74468.herokuapp.com/" target="_blank" class="btn btn-primary">Live Deployment</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Democratreats Card -->
+						<div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./projectScreenShots/democratreats.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Democratreats</h5>
+									<p class="project-tech-list">Sequelize, Node.js, Express.js</p>
+									<p class="project-summary">Group project made using Sequelize, Node, Express and Handlebars. User and admin accounts can create and vote in surveys.</p>
+									<div id="button-wrapper">
+										<a href="https://github.com/rskanb/democratreats" target="_blank" class="btn btn-primary">GitHub Repo</a>
+										<a href="https://damp-headland-74421.herokuapp.com" target="_blank" class="btn btn-primary">Live Deployment</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- GifTube card -->
+						<div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./projectScreenShots/giftube.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">GifTube</h5>
+									<p class="project-tech-list">jQuery, HTML5, CSS3</p>
+									<p class="project-summary">A web app that lets you search for GIFs using an API. Made using HTML, JavaScript and jQuery for dynamic DOM manipulation. Has a persistent favorites list feature.</p>
+									<div id="button-wrapper">
+										<a href="https://github.com/wileybb/eaze-take-home" target="_blank" class="btn btn-primary">GitHub Repo</a>
+										<a href="https://wileybb.github.io/eaze-take-home/" target="_blank" class="btn btn-primary">Live Deployment</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./projectScreenShots/memory.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Memory</h5>
+									<p class="project-tech-list">React, CSS3</p>
+									<p class="project-summary">A game I made using React and CSS animations.</p>
+									<div id="button-wrapper">
+										<a href="https://github.com/wileybb/memory-game" target="_blank" class="btn btn-primary">GitHub Repo</a>
+										<a href="https://wileybb.github.io/memory-game/" target="_blank" class="btn btn-primary">Live Deployment</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="./projectScreenShots/nosh.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Nosh</h5>
+									<p class="project-tech-list">jQuery, API, HTML5, CSS3</p>
+									<p class="project-summary">Chef assistant app. Contributed API calls and jQuery to query a recipe database and dynamically display the results.</p>									
+									<div id="button-wrapper">									
+										<a href="https://github.com/adomoshe/nosh"target="_blank" class="btn btn-primary">GitHub Repo</a>
+										<a href="https://adomoshe.github.io/nosh/" target="_blank" class="btn btn-primary">Live Deployment</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-xs-12 col-s-6 col-md-6 col-lg-4 col-m project-item">
+							<div class="card" style="width: 18rem;">
+								<img class="card-img-top" src="#" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<div id="contact">
+					<div id="social-icons">
+						<a class="social-link" href="https://github.com/wileybb" target="_blank"><i class="fab fa-github"></i></a>
+						<a class="social-link" href="https://www.linkedin.com/in/wiley-buchanan-1220a416b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a class="social-link" href="mailto:wileyburkebuchanan@gmail.com"><i class="fas fa-envelope"></i></a>
+					</div>	
+				</div>
+			</div>
+			<p id="credit-text">Three.js background based on <a href="https://tympanus.net/codrops/2017/05/09/infinite-tubes-with-three-js" target="_blank">Infinite Tubes</a> by Louis Hoebregts.</p>
+		</main>
+		<script>
+			$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+				if ($(window).scrollTop() > 100 ){
+					 $('#navigation-bar-background').addClass('show');
+					 console.log("you scrolled");
+  				} else {
+   			 		$('#navigation-bar-background').removeClass('show');
+ 				};   	
+			});
 
-        
-   <!-- <div class="container-fluid" id="footer">
-        <div class="row">
-           <br><p id="copyright">Copyright</p><br>
-        </div>
-    </div> -->
+			$('.scroll').on('click', function(e){		
+				e.preventDefault()
+  				$('html, body').animate({
+      				scrollTop : $(this.hash).offset().top
+    			}, 1500);
+			});
 
-
-
-            <!-- Link to bootstrap javascript -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
-  
-
+		</script>
+		<script src="js/vendors/three.min.js"></script>
+		<script src="js/vendors/perlin.js"></script>
+		<script src="js/demo5.js"></script>
+	</body>
 </html>
